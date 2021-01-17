@@ -1,0 +1,13 @@
+server:
+  port: 8082
+
+
+soul:
+  # Soul 针对 SpringMVC 的配置项，对应 SoulHttpConfig 配置类
+  http:
+    admin-url: http://127.0.0.1:9095 # Soul Admin 地址
+    context-path: /my-user-api # 设置在 Soul 网关的路由前缀，例如说 /order、/product 等等。
+    # 后续，网关会根据该 context-path 来进行路由
+    app-name: my-service # 应用名。未配置情况下，默认使用 `spring.application.name` 配置项
+    port: 8082 #你本项目的启动端口
+    full: false   # 设置true 代表代理你的整个服务，false表示代理你其中某几个controller,如果设置了false，我们需要在自己的要拦截controller类或方法上手动添加@SoulSpringMvcClient注解

@@ -1,0 +1,13 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+management:
+  health:
+    defaults:
+      enabled: false
+soul :
+  sync:
+    websocket :
+      # 设置你的admin的地址
+      urls: ws://localhost:9095/websocket
