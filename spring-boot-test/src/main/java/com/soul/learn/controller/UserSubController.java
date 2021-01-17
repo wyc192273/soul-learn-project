@@ -18,7 +18,7 @@ import com.soul.learn.bean.User;
 public class UserSubController {
 
     @GetMapping("save_user")
-    @SoulSpringMvcClient(path = "/user/save_user")
+    @SoulSpringMvcClient(path = "/save_user")
     public Object findById(@RequestParam("id") int id, @RequestParam("name") String name) {
         User user = new User();
         user.setId(id);
