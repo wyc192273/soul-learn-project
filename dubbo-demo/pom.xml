@@ -2,17 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>soul-learn-project</artifactId>
+        <groupId>com.soul.learn</groupId>
+        <version>1.0.0</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.soul.learn</groupId>
-    <artifactId>soul-learn-project</artifactId>
+    <artifactId>dubbo-demo</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
-        <module>soul-bootstrap-test</module>
-        <module>spring-boot-test</module>
-        <module>spring-boot-test2</module>
-        <module>dubbo-demo</module>
+        <module>dubbo-api</module>
+        <module>dubbo-provider</module>
     </modules>
 
 

@@ -1,0 +1,12 @@
+dubbo:
+  application:
+    name: user-provider
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    port: 12810
+    name: dubbo
+  provider:
+    timeout: 1000
+  scan:
+    base-packages: com.soul.learn.service
