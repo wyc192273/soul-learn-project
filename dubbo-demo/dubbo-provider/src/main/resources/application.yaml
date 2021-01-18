@@ -10,3 +10,11 @@ dubbo:
     timeout: 1000
   scan:
     base-packages: com.soul.learn.service
+
+soul:
+  # Soul 针对 Dubbo 的配置项，对应 DubboConfig 配置类
+  dubbo:
+    admin-url: http://127.0.0.1:9095 # Soul Admin 地址
+    context-path: /user-api # 设置在 Soul 网关的路由前缀，例如说 /order、/product 等等。
+    # 后续，网关会根据该 context-path 来进行路由
+    app-name: user-service # 应用名。未配置情况下，默认使用 Dubbo 的应用名

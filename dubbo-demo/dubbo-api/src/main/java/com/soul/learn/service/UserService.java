@@ -1,5 +1,9 @@
 package com.soul.learn.service;
 
+import java.util.List;
+
+import com.soul.learn.bean.User;
+
 /**
  * @author yuchen.wu
  * @date 2021-01-18
@@ -7,6 +11,14 @@ package com.soul.learn.service;
 
 public interface UserService {
 
-    String getUser(int id);
+    String getUser(Integer id);
+
+    Object saveUser(User user);
+
+    Object saveUserByIdAndName(Integer id, String name);
+
+    Object findByIds(List<Integer> ids);
+
+    Object replaceUser(int id, String name, User user);
 
 }

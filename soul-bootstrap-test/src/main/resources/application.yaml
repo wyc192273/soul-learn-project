@@ -11,3 +11,5 @@ soul :
     websocket :
       # 设置你的admin的地址
       urls: ws://localhost:9095/websocket
+  dubbo:
+    parameter: multi
