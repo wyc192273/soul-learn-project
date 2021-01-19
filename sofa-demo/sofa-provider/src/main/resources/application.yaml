@@ -1,0 +1,10 @@
+com:
+  alipay:
+    sofa:
+      rpc:
+        registry-address: zookeeper://127.0.0.1:2181
+        bolt-port: 8888
+
+spring:
+  application:
+    name: sofa-service

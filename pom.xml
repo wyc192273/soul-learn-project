@@ -13,6 +13,7 @@
         <module>spring-boot-test</module>
         <module>spring-boot-test2</module>
         <module>dubbo-demo</module>
+        <module>sofa-demo</module>
     </modules>
 
     <properties>
